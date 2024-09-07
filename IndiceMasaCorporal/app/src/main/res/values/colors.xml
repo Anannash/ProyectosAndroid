@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="naranja">#FFCA00</color>
+    <color name="rosa">#FF00DD</color>
+    <color name="morado">#C000FF</color>
+    <color name="moradoChido">#601756</color>
+    <color name="Naranja_clarito">#FAEAAF</color>
+    <color name="blancoFtxt">#A8EADDD5</color>
+    <color name="toolabarcolor">#A8F33100</color>
+    <color name="iconoscolor">#A8FFFFFF</color>
+
+
+</resources>

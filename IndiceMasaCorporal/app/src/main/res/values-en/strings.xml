@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Body mass index</string>
+    <string name="textAlturaST">Height (mts)</string>
+    <string name="editAlturaST">Put your Height</string>
+    <string name="textPesoST">Mass (kg)</string>
+    <string name="editPesoST">Put  your mass</string>
+    <string name="textResultadoST">Result</string>
+    <string name="buttonCalcularST">Calc BMI</string>
+    <string name="textIMCST">BMI: </string>
+    <string name="textTituloIMSST">
+Body Mass Index</string>
+    <string name="textTituloST">THE BEST CALC BMI  ver 1.0</string>
+
+
+    <string name="BP">Under</string>
+    <string name="N">Normal weight</string>
+    <string name="SP">Overweight</string>
+    <string name="Ob">Obesity 1</string>
+    <string name="Ob2">Obesity 2</string>
+    <string name="Ob3">Obesity 3</string>
+
+
+    <!-- Recursos por elementos Menu -->
+    <string name="ItemMenu_Camara">Camera</string>
+    <string name="ItemMenu_Busqueda">Search</string>
+    <string name="ItemMenu_Configuracion">Settings</string>
+    <string name="ItemMenu_Acerca">About of...</string>
+
+    <!-- Recursos por elementos Acerca de -->
+    <string name="versiontxtS">Version 1.0</string>
+    <string name="fechaS">6/09/2024</string>
+    <string name="autorS">Andrea Morlaes Chavez alias The Empress</string>
+    <string name="butonRegresarS">Back</string>
+
+</resources>

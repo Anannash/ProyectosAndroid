@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/itemHome"
+
+            android:title="@string/home"
+            android:icon="@drawable/baseline_home_24"
+            />
+        <item
+            android:id="@+id/itemTar"
+            android:icon="@drawable/baseline_edit_square_24"
+            android:title="@string/tar"
+            />
+
+        <item
+            android:id="@+id/itemAct"
+            android:icon="@drawable/baseline_yard_24"
+            android:title="@string/act"
+            />
+        <item
+            android:id="@+id/itemAni"
+            android:icon="@drawable/baseline_catching_pokemon_24"
+            android:title="@string/ani"
+            />
+        <item
+            android:id="@+id/itemPel"
+            android:icon="@drawable/baseline_local_movies_24"
+            android:title="@string/peli"
+            />
+        <item
+
+            android:id="@+id/itemSer"
+            android:icon="@drawable/baseline_ondemand_video_24"
+            android:title="@string/ser"
+            />
+        </group>
+</menu>

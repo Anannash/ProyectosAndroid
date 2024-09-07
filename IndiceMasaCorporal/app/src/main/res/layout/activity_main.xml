@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scaracat"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/toolabarcolor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:menu="@menu/toobar_menu" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EAE0E0"
+        android:paddingBottom="10dp"
+        android:text="@string/textTituloST"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAE0E0"
+        android:paddingBottom="10dp"
+        android:text="@string/textPesoST"
+        android:textColor="#000000"
+        android:textColorHint="#BDBDBD"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edittxtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#EAE0E0"
+        android:ems="10"
+        android:hint="@string/editPesoST"
+        android:inputType="numberDecimal"
+        android:textColorHint="#D5D5D5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAE0E0"
+        android:paddingBottom="10dp"
+        android:text="@string/textAlturaST"
+        android:textColor="#000000"
+        android:textColorHint="#D3C5C5"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edittxtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EAE0E0"
+        android:ems="10"
+        android:hint="@string/editAlturaST"
+        android:inputType="numberDecimal"
+        android:textColorHint="#D5D5D5"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/IMCbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="#FB8C00"
+        android:padding="20dp"
+        android:paddingTop="16sp"
+        android:text="@string/buttonCalcularST"
+        android:textColor="#47444B"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtresultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A9EADDD5"
+        android:text="@string/textResultadoST"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtInterpretacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blancoFtxt"
+        android:text="@string/textIMCST"
+        android:textSize="24sp" />
+
+</LinearLayout>

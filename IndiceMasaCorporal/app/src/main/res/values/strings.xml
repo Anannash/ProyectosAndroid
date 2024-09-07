@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Indice MasaCorporal</string>
+    <string name="textAlturaST">Altura (mts)</string>
+    <string name="editAlturaST">Ponga su altura</string>
+    <string name="textPesoST">Peso (kg)</string>
+    <string name="editPesoST">Ponga su peso</string>
+    <string name="textResultadoST">Resultado</string>
+    <string name="buttonCalcularST">Calcular IMC</string>
+    <string name="textIMCST">IMC: </string>
+    <string name="textTituloIMSST">Indice de Masa Corporal</string>
+    <string name="textTituloST">EL MEJOR CAULCULO DE IMC ver1.0</string>
+
+
+    <string name="BP">Bajo Peso</string>
+    <string name="N">Peso Normal</string>
+    <string name="SP">Sobrepeso</string>
+    <string name="Ob">Obesidad 1</string>
+    <string name="Ob2">Obesidad 2</string>
+    <string name="Ob3">Obesidad 3</string>
+
+
+    <!-- Recursos por elementos Menu -->
+    <string name="ItemMenu_Camara">Camara</string>
+    <string name="ItemMenu_Busqueda">Busqueda</string>
+    <string name="ItemMenu_Configuracion">Configuracion</string>
+    <string name="ItemMenu_Acerca">Acerca de...</string>
+
+    <!-- Recursos por elementos Acerca de -->
+
+    <string name="versiontxtS">Version 1.0</string>
+    <string name="fechaS">6/09/2024</string>
+    <string name="autorS">Andrea Morlaes Chavez alias La Emperatriz</string>
+    <string name="butonRegresarS">Regresar</string>
+
+</resources>

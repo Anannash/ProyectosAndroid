@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lanzar Dado</string>
+    <string name="Titulo">Lanzador de DADOS  3000</string>
+    <string name="boton">Lanzar</string>
+    <string name="textonose">Lanzar Dado</string>
+    <string name="ImaDesc">Imagen de dado</string>
+    <string name="textView_lado1">Lado 1:</string>
+    <string name="textView_lado2">Lado 2:</string>
+    <string name="textView_lado3">Lado 3:</string>
+    <string name="textView_lado4">Lado 4:</string>
+    <string name="textView_lado5">Lado 5:</string>
+    <string name="textView_lado6">Lado 6:</string>
+    <string name="textView_porcentaje">  %</string>
+</resources>

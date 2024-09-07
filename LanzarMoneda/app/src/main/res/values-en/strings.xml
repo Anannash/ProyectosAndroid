@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toss MORA</string>
+    <string name="TituloTV">Simulation of Throwing Mora</string>
+    <string name="ImagenVMoneeda">Archon Coin</string>
+    <string name="buttonLanzar">Toss Mora</string>
+    <string name="txt_sellosTotales">Stamps:</string>
+    <string name="txt_agilasTotales">Heads:</string>
+    <string name="txt_agilasPorce"> % </string>
+    <string name="txt_sellosPorce"> % </string>
+
+
+
+    <string name="menu">Menu</string>
+    <string name="camara">Camera</string>
+    <string name="buscar">Search</string>
+    <string name="confi">Settings</string>
+    <string name="acerc">About</string>
+
+    <string name="textViwVersion">Version 1.0</string>
+    <string name="fecha">6/09/2024</string>
+    <string name="Desarrollador">Andrea Morales Chavez alias The Empress</string>
+    <string name="buttonRegresar">Back</string>
+
+</resources>

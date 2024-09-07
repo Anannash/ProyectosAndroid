@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IndiceMasaCorporal" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item>
+        <color name="colorPrimary">@color/moradoChido</color>-->
+        <!--
+        <color name="Naranja_clarito">#E1692F</color>
+        <color name="blancoFtxt">#A84E4A48</color>
+        <color name="toolabarcolor">#47444B</color>-->
+
+
+    </style>
+</resources>

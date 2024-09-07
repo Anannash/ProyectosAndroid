@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sumar Numeros</string>
+    <string name="text_view_titulo">Calculadora simple</string>
+    <string name="ButtonS">+</string>
+    <string name="ButtonR">-</string>
+    <string name="text_view_ind">Ingresa los numeros:</string>
+    <string name="text_view_Resultado">0</string>
+    <string name="editT1">Numero 1 bb</string>
+    <string name="editT2">Numero 2 bb</string>
+
+</resources>

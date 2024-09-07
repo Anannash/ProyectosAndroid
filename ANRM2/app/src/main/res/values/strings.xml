@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ANRM2</string>
+    <string name="NavigationDR_close">Cerrado bb</string>
+    <string name="NavigationDR_open">Abierto bb</string>
+
+    
+    
+    
+    <string name="numero">Ingresa un numero</string>
+    <string name="Resultado">R.</string>
+
+
+    <string name="home">Inicio</string>
+    <string name="peli">Peliculas por ver</string>
+    <string name="act">Actividades por hacer</string>
+    <string name="ser">Series por ver</string>
+    <string name="ani">Animes por ver</string>
+    <string name="tar">Tareas</string>
+
+</resources>

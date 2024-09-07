@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lanzar Moneda</string>
+    <string name="TituloTV">Simulacion de Lanzar Mora</string>
+    <string name="ImagenVMoneeda">Moneda de arconte</string>
+    <string name="buttonLanzar">Lanzar Moneda</string>
+    <string name="txt_sellosTotales">Sellos:</string>
+    <string name="txt_agilasTotales">Agilas:</string>
+    <string name="txt_agilasPorce"> % </string>
+    <string name="txt_sellosPorce"> % </string>
+
+    <!-- Recursos STRINF para TOOLBAR-->
+    <string name="menu">Menu</string>
+    <string name="camara">Camara</string>
+    <string name="buscar">Buscar</string>
+    <string name="confi">Configuracion</string>
+    <string name="acerc">Acerca de</string>
+
+    <!-- ACERCA DE -->
+
+    <string name="textViwVersion">Version 1.0</string>
+    <string name="fecha">6/09/2024</string>
+    <string name="Desarrollador">Andrea Morales Chavez alias la EMPERATRIZ</string>
+    <string name="buttonRegresar">Regresar</string>
+
+</resources>

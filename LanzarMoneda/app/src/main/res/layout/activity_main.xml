@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondol"
+    android:contentDescription="@string/ImagenVMoneeda"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amaranto"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/toolbar_menu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/TituloTV"
+        android:textAlignment="center"
+        android:textColor="#322B1C"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/monedaImaV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ImagenVMoneeda"
+        app:srcCompat="@drawable/mora" />
+
+    <Button
+        android:id="@+id/lanzarbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="#ECC461"
+        android:text="@string/app_name"
+        android:textColorLink="#BA3232" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSellosT"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+
+            android:background="#D8C38A"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/txt_sellosTotales"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <ProgressBar
+            android:id="@+id/pbSello"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D8C38C"
+            android:progressTint="#FFD500"
+            android:scaleY="3" />
+
+        <TextView
+            android:id="@+id/txtSelloP"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:background="#D8C38A"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/txt_sellosPorce"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtAgilasT"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:background="#D8C38A"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/txt_agilasTotales"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <ProgressBar
+            android:id="@+id/pbAgila"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D8C38C"
+            android:progressTint="#FFD500"
+            android:scaleY="3" />
+
+        <TextView
+            android:id="@+id/txtAgilasP"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:background="#D8C38A"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/txt_agilasPorce"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
