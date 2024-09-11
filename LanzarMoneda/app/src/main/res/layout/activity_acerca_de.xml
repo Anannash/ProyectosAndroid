@@ -14,39 +14,46 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="30dp"
         android:padding="30dp"
-        android:text="TextView"
+        android:text="@string/textViwVersion"
+        android:textAlignment="center"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="30dp"
         android:padding="30dp"
-        android:text="TextView"
+        android:text="@string/fecha"
+        android:textAlignment="center"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="30dp"
         android:padding="30dp"
-        android:text="TextView"
+        android:text="@string/Desarrollador"
+        android:textAlignment="center"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="30dp"
         android:padding="30dp"
-        android:text="Button"
+        android:text="@string/buttonRegresar"
         android:textSize="24sp" />
 </LinearLayout>

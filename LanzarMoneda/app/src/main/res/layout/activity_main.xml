@@ -33,7 +33,7 @@
     <ImageView
         android:id="@+id/monedaImaV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="248dp"
         android:contentDescription="@string/ImagenVMoneeda"
         app:srcCompat="@drawable/mora" />
 
@@ -123,6 +123,13 @@
             android:text="@string/txt_agilasPorce"
             android:textAlignment="center"
             android:textColor="#000000" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </LinearLayout>

@@ -1,7 +1,10 @@
 package tecnm.chihuahua2.desarrollomovil.indicemasacorporal;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         Btncalular = findViewById(R.id.IMCbtn);
         TxtResultado = findViewById(R.id.txtresultado);
         TxtIMC = findViewById(R.id.txtInterpretacion);
+
+
         toolbarM = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbarM);
@@ -88,7 +93,45 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}
+}//Fin One Create
+
+    //escuchar eventos de los eventos del menu
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.camera) {
+            Toast.makeText(this, "Camara", Toast.LENGTH_SHORT).show();
+            //abrir camara
+            Intent actividadCamara = new Intent(MediaStore.INTENT_ACTION_VIDEO_CAMERA);
+            startActivity(actividadCamara);
+
+        } else if (itemId == R.id.settings) {
+            Toast.makeText(this, "Ajustes", Toast.LENGTH_SHORT).show();
+
+        } else if (itemId == R.id.about) {
+            Toast.makeText(this, "Acerca de", Toast.LENGTH_SHORT).show();
+            //llamr a la actividad Acerca DE
+            Intent actividadAcercade;
+            actividadAcercade = new Intent(this, AcercaDe.class);
+            startActivity(actividadAcercade);
+        }
+
+
+
+        return true;
+    }
+
+        @Override
+
+        public boolean onCreateOptionsMenu(android.view.Menu menu){
+
+            getMenuInflater().inflate(R.menu.toobar_menu,menu);
+            return true;
+
+        }
+
+
+
     public void actualizacionIMC (float IMC){
         if (IMC<18.5){
             TxtIMC.setText(R.string.BP);
@@ -129,5 +172,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-    }
-}
+    }//fIN acTUALIZACION
+}//FIN MAIN

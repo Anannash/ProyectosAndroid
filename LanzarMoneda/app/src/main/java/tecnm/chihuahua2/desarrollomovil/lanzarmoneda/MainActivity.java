@@ -1,15 +1,21 @@
 package tecnm.chihuahua2.desarrollomovil.lanzarmoneda;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -24,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtSellosTo, txtAgilasTo,txtAgilasPo, txtSellosPo;
     int sellos, agilas, total;
     ProgressBar PogresBSello, PogresBAgilas, Pogres;
+    LinearLayout AcercaDeL;
 
 
     @Override
@@ -54,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //declarar objetos para gestionar el toolbar
+        Toolbar toolbar1 = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar1);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+
+
+
+
         //agregar escribir de evento para el boton
 
         BtnLanzar.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +82,51 @@ public class MainActivity extends AppCompatActivity {
 
                 }//fin del on click
         });//fin del button
+        }//FIN CREATE
+
+            //inflar el menu
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu){
+            getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+            return true;
         }
+
+        //impleentar escuchador para seleccion de elementos de menu
+    @Override
+        public boolean onOptionsItemSelected(MenuItem item ){
+        //obtener el id del elemento de menu seleccionado BB
+            int id_menu = item.getItemId();
+
+            //verificar cual elemento del menu fue seleccionado
+            if (id_menu == R.id.acerc){
+                Toast.makeText(this, "Acerca de..."
+                        , Toast.LENGTH_SHORT).show();
+
+                Intent acti_AcercaDe;
+                acti_AcercaDe = new Intent(this, AcercaDe.class);
+                    startActivity(acti_AcercaDe);
+            }else if (id_menu == R.id.camara){Toast.makeText(this,
+                    "Camara"
+                    , Toast.LENGTH_SHORT).show();
+                    //Abrir app de camara
+
+                Intent appCamara = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(appCamara);
+
+                }else if (id_menu == R.id.confi){ Toast.makeText(this
+                    , "Configuracion"
+                        , Toast.LENGTH_SHORT).show();
+
+                    }else if (id_menu == R.id.buscar){Toast.makeText(
+                            this, "Buscar"
+                        , Toast.LENGTH_SHORT).show();
+
+                        }
+        return true;
+
+
+    }
 
         public void ProcesarSalida(int numero){
             // generar un numero aleatorio 0 o 1
