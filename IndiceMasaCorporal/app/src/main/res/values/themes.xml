@@ -2,8 +2,21 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.IndiceMasaCorporal" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorPrimary">@color/moradoChido</item>
+        <item name="colorOnPrimary">@color/morado</item>
+
+        -->
+
+
+
     </style>
 
     <style name="Theme.IndiceMasaCorporal" parent="Base.Theme.IndiceMasaCorporal" />
+
+    <style name="Moradotxt"
+        parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#F4511E</item>
+    </style>
+
 </resources>

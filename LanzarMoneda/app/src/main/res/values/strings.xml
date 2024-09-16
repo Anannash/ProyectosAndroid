@@ -22,4 +22,25 @@
     <string name="Desarrollador">Andrea Morales Chavez alias la EMPERATRIZ</string>
     <string name="buttonRegresar">Regresar</string>
 
+
+    <string name="btnHistorisT">Historia del Peso</string>
+    <string name="btnBuscatMoneda">Buscar Mora</string>
+
+
+    <string name="histooria">Historia del peso</string>
+    <string name="M1">Moneda de cobre de 8 reales acuñada durante la Guerra de Independencia</string>
+    <string name="M2">Tostón mexicano</string>
+    <string name="M3">Real de ocho acuñado en la ceca de México en 1761</string>
+    <string name="M4">Moneda mexicana de 1859 resellada en Japón para su curso legal en ese país asiático</string>
+
+    <string name="BuscarMonedaT">Buscar Moneda</string>
+    <string name="RadioMo1">8 Reales de cobre</string>
+    <string name="RadioMo2">Toston</string>
+    <string name="RadioMo3">Real de ocho</string>
+    <string name="RadioMo4">Moneda mexicana</string>
+
+    <string name="decrMoneda">Descripcion de la moneda</string>
+    <string name="imageViewBuscar">Moneda Mexicana ajua</string>
+
+
 </resources>

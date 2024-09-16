@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/witchatatelier"
+    tools:context=".HistoriaPeso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/histooria"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFBFB"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/M1"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/ImgPeso1"
+            android:layout_width="298dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/moneda8reales_1812" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFBFB"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/M2"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="371dp"
+            android:layout_height="185dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/centavos501919" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFBFB"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/M3"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/real_de_a_ocho" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFBFB"
+            android:text="@string/M4"
+            android:textAlignment="center"
+            android:fontFamily="@font/aclonica" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/aratamecoin1859" />
+
+        <Button
+            android:id="@+id/regresarH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B87226"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/buttonRegresar" />
+    </LinearLayout>
+</ScrollView>

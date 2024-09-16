@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     int sellos, agilas, total;
     ProgressBar PogresBSello, PogresBAgilas, Pogres;
     LinearLayout AcercaDeL;
+    Button Historiabtn, BuscaeMonedabtn;
 
 
     @Override
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.scrollView), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
         txtAgilasTo = findViewById(R.id.txtAgilasT);
         txtAgilasPo = findViewById(R.id.txtAgilasP);
         txtSellosPo = findViewById(R.id.txtSelloP);
+        Historiabtn = findViewById(R.id.btnHistoria);
+        BuscaeMonedabtn = findViewById(R.id.btnBusacarM);
+
 
 
 
@@ -66,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar1);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
+
+        //agregar escuchador para la historiua del objeto
 
 
 
@@ -82,7 +88,36 @@ public class MainActivity extends AppCompatActivity {
 
                 }//fin del on click
         });//fin del button
+
+        Historiabtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent acti_Historia;
+                acti_Historia = new Intent(MainActivity.this, HistoriaPeso.class);
+                startActivity(acti_Historia);
+        }
+        });
+
+        BuscaeMonedabtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent acti_BuscarMoneda;
+                acti_BuscarMoneda = new Intent(MainActivity.this, BuscarMoneda.class);
+                startActivity(acti_BuscarMoneda);
+            }
+        });
+
+
+
+
+
+
         }//FIN CREATE
+
+
+
 
             //inflar el menu
 

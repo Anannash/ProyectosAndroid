@@ -22,4 +22,24 @@
     <string name="Desarrollador">Andrea Morales Chavez alias The Empress</string>
     <string name="buttonRegresar">Back</string>
 
+    <string name="btnHistorisT">Coin History</string>
+    <string name="btnBuscatMoneda">Search coin</string>
+
+
+
+    <string name="histooria">Coin History</string>
+    <string name="M1">Copper coin of 8 reales minted during the War of Independence</string>
+    <string name="M2">Mexican tostón</string>
+    <string name="M3">Real of eight minted at the Mexican mint in 1761</string>
+    <string name="M4">Mexican coin from 1859 resealed in Japan for legal tender in that Asian country</string>
+
+
+    <string name="BuscarMonedaT">Serch Coin</string>
+    <string name="RadioMo1">Copper coin of 8 reales</string>
+    <string name="RadioMo2">Toston</string>
+    <string name="RadioMo3">Real of eight</string>
+    <string name="RadioMo4">Mexican coin</string>
+
+    <string name="decrMoneda">Description of the coin</string>
+    <string name="imageViewBuscar">Mexican coin ajua</string>
 </resources>
