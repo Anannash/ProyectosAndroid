@@ -7,9 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".AcercaDe"
     android:orientation="vertical"
-
     >
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"

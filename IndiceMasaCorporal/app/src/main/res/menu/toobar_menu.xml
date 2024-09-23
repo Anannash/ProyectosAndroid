@@ -5,21 +5,14 @@
     <item android:id="@+id/camera"
         android:title="@string/ItemMenu_Camara"
         android:icon="@drawable/baseline_camera_alt_24"
-        app:showAsAction="ifRoom"
-        />
-
+        app:showAsAction="ifRoom" />
     <item android:id="@+id/search"
         android:title="@string/ItemMenu_Busqueda"
         android:icon="@drawable/rounded_search_24"
         app:showAsAction="ifRoom|collapseActionView"
-        app:actionViewClass="androidx.appcompat.widget.SearchView"
-        />
-
-
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
     <item android:id="@+id/settings"
-        android:title="@string/ItemMenu_Configuracion"
-        />
+        android:title="@string/ItemMenu_Configuracion" />
     <item android:id="@+id/about"
-        android:title="@string/ItemMenu_Acerca"
-        />
+        android:title="@string/ItemMenu_Acerca" />
 </menu>

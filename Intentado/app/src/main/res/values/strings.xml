@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IntencionesAndroid</string>
+
+    <string name="SbtnAbrirPaginaWeb">Abrir pagina web</string>
+    <string name="STitulo">Intenciones en Android</string>
+    <string name="SbtnLlamada">Llamada a telefono</string>
+    <string name="SbtnGoogleMaps">Abrir googleMaps</string>
+    <string name="SbtnGoogleMapsCalle">Google Maps vista calle</string>
+    <string name="SbtnTomarFoto">Tomar foto</string>
+    <string name="SbtnMandarMensaje">Mandar Mensaje</string>
+</resources>

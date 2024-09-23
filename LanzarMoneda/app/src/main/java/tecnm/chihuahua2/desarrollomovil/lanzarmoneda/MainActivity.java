@@ -94,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent acti_Historia;
-                acti_Historia = new Intent(MainActivity.this, HistoriaPeso.class);
+                acti_Historia = new Intent(MainActivity.this,
+                        HistoriaPeso.class);
                 startActivity(acti_Historia);
         }
         });
@@ -104,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent acti_BuscarMoneda;
-                acti_BuscarMoneda = new Intent(MainActivity.this, BuscarMoneda.class);
+                acti_BuscarMoneda = new Intent(
+                        MainActivity.this, BuscarMoneda.class);
                 startActivity(acti_BuscarMoneda);
             }
         });

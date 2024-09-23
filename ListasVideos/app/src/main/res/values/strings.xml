@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListasVideos</string>
+
+    <string name="TVtitulo">LISTAS y VIDEOS</string>
+    <string name="BTNlistas">Listas</string>
+    <string name="BTNvideos">Videos</string>
+
+</resources>

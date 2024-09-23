@@ -1,7 +1,14 @@
 package tecnm.chihuahua2.desarrollomovil.indicemasacorporal;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.MenuItem;
@@ -14,31 +21,37 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
 public class MainActivity extends AppCompatActivity {
 
     //varibales
     EditText EdtPeso, EdtAltura;
-    Button Btncalular;
+    Button Btncalular, Notiboton;
     TextView TxtResultado,TxtIMC;
     Toolbar toolbarM;
+
+    PendingIntent pendingIntent;
+    String CHANNEL_ID = "01";
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.Linear), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
             return insets;
-
-
-
 
         });
 
@@ -51,12 +64,41 @@ public class MainActivity extends AppCompatActivity {
         Btncalular = findViewById(R.id.IMCbtn);
         TxtResultado = findViewById(R.id.txtresultado);
         TxtIMC = findViewById(R.id.txtInterpretacion);
+        Notiboton = findViewById(R.id.Notibtn);
 
 
         toolbarM = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbarM);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
+
+        /*
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("Noti","Notificacion"
+                    , NotificationManager.IMPORTANCE_DEFAULT);
+
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }*/
+
+        Notiboton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NotificationCompat.Builder builder =
+                        new NotificationCompat.Builder(
+                                MainActivity.this)
+                        .setContentTitle("Estoy Solito")
+                        .setContentText("No tengo nadie aqui a mi lado")
+                        .setSmallIcon(R.drawable.baseline_doorbell_24)
+                        .setAutoCancel(true)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH);
+
+                NotificationManager notificationManager =
+                        (NotificationManager) getSystemService
+                                (Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(1, builder.build());
+            }
+        });
 
 
         //Agregar escuchador al hacer clo9ck
@@ -83,17 +125,76 @@ public class MainActivity extends AppCompatActivity {
                 actualizacionIMC(IMC);
 
 
-
-
-
-
-
             }
+
+
+
       });
 
 
 
 }//Fin One Create
+/*
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is not in the Support Library.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name);
+            String description = getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this.
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+
+
+    }
+
+
+
+
+    public void MostrarNotificacion() {
+        // Solo crear el canal si la versión es Android 8.0 (API 26) o superior
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(
+                    CHANNEL_ID,
+                    "NEW",
+                    NotificationManager.IMPORTANCE_DEFAULT
+            );
+
+            NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            if (manager != null) {
+                manager.createNotificationChannel(channel);
+            }
+        }
+
+        // Mostrar la notificación (en cualquier versión)
+        MostrarNuevaNotificacion();
+    }
+
+    public void MostrarNuevaNotificacion(){
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.baseline_doorbell_24)
+                .setContentTitle("Estoy Solito")
+                .setContentText("No tengo nadie aqui a mi lado")
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+
+        NotificationManager manager =   (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
+        // Mostrar la notificación (para todas las versiones)
+        if (manager != null) {
+            manager.notify(1, builder.build());
+        }
+    }
+
+*/
+
+
 
     //escuchar eventos de los eventos del menu
     @Override
@@ -102,11 +203,15 @@ public class MainActivity extends AppCompatActivity {
         if (itemId == R.id.camera) {
             Toast.makeText(this, "Camara", Toast.LENGTH_SHORT).show();
             //abrir camara
-            Intent actividadCamara = new Intent(MediaStore.INTENT_ACTION_VIDEO_CAMERA);
+            Intent actividadCamara = new Intent(MediaStore.
+                    INTENT_ACTION_VIDEO_CAMERA);
             startActivity(actividadCamara);
 
         } else if (itemId == R.id.settings) {
-            Toast.makeText(this, "Ajustes", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "SCARA", Toast.LENGTH_SHORT).show();
+            Intent ScaraIntent;
+            ScaraIntent = new Intent(this, Scara.class);
+            startActivity(ScaraIntent);
 
         } else if (itemId == R.id.about) {
             Toast.makeText(this, "Acerca de", Toast.LENGTH_SHORT).show();
@@ -115,9 +220,6 @@ public class MainActivity extends AppCompatActivity {
             actividadAcercade = new Intent(this, AcercaDe.class);
             startActivity(actividadAcercade);
         }
-
-
-
         return true;
     }
 

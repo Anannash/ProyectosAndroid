@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="ThemeLuz" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--<item name="buttonStyle">@style/MyButtonStyleLIGHT</item>-->
+
+        <item name="android:textColor">@color/moradoBonis</item>
+        <item name="android:background">@drawable/w1</item>
+    </style>
+
+
+    <style name="ThemeNoche" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--<item name="buttonStyle">@style/MyButtonStyleDARK</item>-->
+        <item name="android:textColor">@color/verdeBonis</item>
+        <item name="android:background">@drawable/w2</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="MyButtonStyleDARK" parent="Widget.AppCompat.Button">
+
+        <item name="android:textColor">@color/verdeBonis</item>
+        <item name="android:backgroundTint">@color/moradoBonis</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="MyButtonStyleLIGHT" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/moradoBonis</item>
+        <item name="android:backgroundTint">@color/verdeBonis</item>
+    </style>
+
+
+
+
+
+
+
+
+</resources>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/Linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/scaracat"
@@ -101,5 +101,15 @@
         android:background="@color/blancoFtxt"
         android:text="@string/textIMCST"
         android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Notibtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="@string/ItemMenu_Notificaciones"
+        android:textColor="#861D1D" />
 
 </LinearLayout>

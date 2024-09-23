@@ -18,33 +18,40 @@
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <RadioButton
-        android:id="@+id/RadioGMonedas"
+    <RadioGroup
+        android:id="@+id/RGroupbtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aladin"
-        android:text="@string/RadioMo1" />
+        android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/RadioGMonedas2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aladin"
-        android:text="@string/RadioMo2" />
+        <RadioButton
+            android:id="@+id/radioGMonedas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="@string/RadioMo4" />
 
-    <RadioButton
-        android:id="@+id/RadioGMonedas3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aladin"
-        android:text="@string/RadioMo3" />
+        <RadioButton
+            android:id="@+id/RadioGMonedas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="@string/RadioMo2" />
 
-    <RadioButton
-        android:id="@+id/RadioGMonedas4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aladin"
-        android:text="@string/RadioMo4" />
+        <RadioButton
+            android:id="@+id/RadioGMonedas3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="@string/RadioMo3" />
+
+        <RadioButton
+            android:id="@+id/RadioGMonedas4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="@string/RadioMo4" />
+
+    </RadioGroup>
 
     <ImageButton
         android:id="@+id/ImagenMoneda"
