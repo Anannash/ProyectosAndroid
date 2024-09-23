@@ -5,4 +5,12 @@
     <string name="BTNlistas">Listas</string>
     <string name="BTNvideos">Videos</string>
 
+    <!-- LISTAS -->
+
+    <string name="BTregtersar">Regresar</string>
+    <string name="TXTnombre">Nombre</string>
+    <string name="TXTedad">Edad</string>"
+    <string name="TXTciudad">Ciudad</string>
+    <string name="IMGusuario">Foto de perfil</string>
+
 </resources>

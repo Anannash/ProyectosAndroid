@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ListasVideos"
         tools:targetApi="31">
         <activity
+            android:name=".Videos"
+            android:exported="false" />
+        <activity
             android:name=".Listas"
             android:exported="false" />
         <activity
