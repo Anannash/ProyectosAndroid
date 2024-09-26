@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLite</string>1
+
+    <string name="TXTtitulo">Gramineas</string>
+    <string name="TXTid">Id:</string>
+    <string name="TXTnombre">nombre comun:</string>
+    <string name="TXTdescripcion">Descripcion:</string>
+</resources>

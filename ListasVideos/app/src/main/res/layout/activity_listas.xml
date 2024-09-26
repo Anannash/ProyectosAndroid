@@ -5,36 +5,63 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".Listas">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/btnRegresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/BTregtersar"
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:background="#94D8A38C"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/TXTnombre"
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:background="#94D8A38C"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/TXTedad"
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtCiiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94D8A38C"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/TXTciudad"
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ImgUsuario"
+        android:layout_width="258dp"
+        android:layout_height="198dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/IMGusuario"
+        tools:srcCompat="@drawable/kla" />
 
     <ListView
+        android:id="@+id/listaUsusarios"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="#94D8A38C">
 
     </ListView>
 </LinearLayout>
