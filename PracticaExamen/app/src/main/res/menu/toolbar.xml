@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/CamaraItem"
+        android:title="@string/CamaraItem"
+        app:icon="@drawable/baseline_camera_24"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/BuscarItem"
+        android:title="@string/BuscarItem"
+        app:icon="@drawable/baseline_search_24"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:id="@+id/notificacionItem"
+        android:title="@string/NotifiBTN"
+        app:icon="@drawable/baseline_notifications_24"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+</menu>

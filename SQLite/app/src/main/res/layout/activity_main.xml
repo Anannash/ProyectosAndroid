@@ -5,14 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ssss"
     android:orientation="vertical"
     android:padding="25dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
-        android:text="@string/TXTtitulo" />
+        android:fontFamily="@font/agbalumo"
+        android:gravity="center"
+        android:text="@string/TXTtitulo"
+        android:textAlignment="center"
+        android:textSize="34sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +34,7 @@
         <EditText
             android:id="@+id/txtId"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="66dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/TXTid"
@@ -52,7 +57,7 @@
         <EditText
             android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/TXTnombre"
@@ -75,7 +80,7 @@
         <EditText
             android:id="@+id/txtDesc"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/TXTdescripcion"
@@ -85,34 +90,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="165dp">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/PrimeroIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNprimero"
             app:srcCompat="@android:drawable/ic_media_previous" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/AnteriorIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNanterior"
             app:srcCompat="@android:drawable/ic_media_rew" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/SiguienteIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNsiguiente"
             app:srcCompat="@android:drawable/ic_media_ff" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/Ultimortn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNultimo"
             app:srcCompat="@android:drawable/ic_media_next" />
 
     </LinearLayout>
@@ -120,34 +130,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/BuscarIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNbuscar"
             app:srcCompat="@android:drawable/ic_menu_search" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/ModificarIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNmodificar"
             app:srcCompat="@android:drawable/ic_menu_edit" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/AgreggarIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNagregar"
             app:srcCompat="@android:drawable/ic_input_add" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/EliminarIBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/IBTNeliminar"
             app:srcCompat="@android:drawable/ic_delete" />
     </LinearLayout>
 

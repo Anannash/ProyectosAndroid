@@ -5,4 +5,16 @@
     <string name="TXTid">Id:</string>
     <string name="TXTnombre">nombre comun:</string>
     <string name="TXTdescripcion">Descripcion:</string>
+
+    <string name="IBTNprimero">Primer Registro</string>
+    <string name="IBTNanterior">Registro anterior</string>
+    <string name="IBTNsiguiente">Registro Siguiente</string>
+    <string name="IBTNultimo">Ultimo Registro</string>
+
+
+    <string name="IBTNagregar">Agregar</string>
+    <string name="IBTNeliminar">Eliminar</string>
+    <string name="IBTNmodificar">Modificar</string>
+    <string name="IBTNbuscar">Buscar</string>
+
 </resources>

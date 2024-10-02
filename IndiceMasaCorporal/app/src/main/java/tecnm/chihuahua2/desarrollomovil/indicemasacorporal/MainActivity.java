@@ -252,7 +252,8 @@ public class MainActivity extends AppCompatActivity {
             TxtIMC.setText(R.string.SP);
             Toast.makeText(MainActivity.this,
                     "VELE BAJANDO A LOS TAMALES", Toast.LENGTH_SHORT).show();
-            TxtIMC.setTextColor(ContextCompat.getColor(MainActivity.this,R.color.naranja));
+            TxtIMC.setTextColor(
+                    ContextCompat.getColor(MainActivity.this,R.color.naranja));
 
         }else if (IMC >=30 && IMC <34.9 ) {
             TxtIMC.setText(R.string.Ob);

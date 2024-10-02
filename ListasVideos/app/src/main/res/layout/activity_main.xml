@@ -5,40 +5,49 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoespadalamb"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="147dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginBottom="41dp"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:background="#B40D060C"
+        android:fontFamily="@font/agbalumo"
+        android:gravity="center"
         android:text="@string/TVtitulo"
-        app:layout_constraintBottom_toTopOf="@+id/btnListas"
+        android:textAlignment="center"
+        android:textColor="#C6668C"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
-
-    <Button
-        android:id="@+id/btnListas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="38dp"
-        android:text="@string/BTNlistas"
-        app:layout_constraintBottom_toTopOf="@+id/btnVideos"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnVideos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#2B0719"
+        android:fontFamily="@font/agbalumo"
         android:text="@string/BTNvideos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btnListas"
-        app:layout_constraintTop_toBottomOf="@+id/btnListas" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnListas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnListas" />
+
+    <Button
+        android:id="@+id/btnListas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="134dp"
+        android:backgroundTint="#2B0719"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/BTNlistas"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

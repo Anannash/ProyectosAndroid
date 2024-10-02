@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Examen1Practico</string>
+    
+    <string name="titulo">Promedio de Calificacion</string>
+    <string name="Promedio">Promedio: </string>
+    <string name="Cantidad">Cantidad de Calificaciones: </string>
+    <string name="Evaluacion">Evaluacion: </string>
+    <string name="CaliList">Lista de Calificaciones </string>
+    <string name="Calificacion">Calificacion: </string>
+    <string name="EditCal">Introduzca una calificacion</string>
+    <string name="btnAgregar">Agregar</string>
+
+
+    
+</resources>

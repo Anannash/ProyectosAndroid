@@ -13,4 +13,18 @@
     <string name="TXTciudad">Ciudad: </string>
     <string name="IMGusuario">Foto de perfil</string>
 
+    <!-- VIDEOS -->
+    <string name="TVtitulovideos">VIDEOS"</string>
+    <string name="IVVideo">Video chidos</string>
+    <string name="IBpause">Pausa</string>
+    <string name="IBplay">Reproducir</string>
+    <string name="IBnext">Siguiente</string>
+    <string name="IBprevious">Anterior</string>
+    <string name="BTNregresar">Regresar</string>
+    <string name="BTNvideo1">Papaoutai</string>
+    <string name="BTNvideo2">Tous les mêmes</string>
+    <string name="BTNvideo3">El nudo del mono</string>
+    <string name="BTNvideo4">NieR y DRAKENGARD </string>
+    <string name="BTNvideo5">Video5</string>
+
 </resources>

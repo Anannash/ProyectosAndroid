@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PracticaExamen</string>
+
+    <string name="Ttitulobb">LA MEJOR APLICACION VISTA</string>
+    <string name="NotifiBTN">Notificacion</string>
+    <string name="Videos">Video chido</string>
+    <string name="PausarMusica">PausarMusica de Fondo</string>
+    <string name="ReproducirMusica">ReproducirMusica de Fondo</string>
+
+    <string name="CamaraItem">Camara</string>
+    <string name="BuscarItem">Buscar</string>
+</resources>
