@@ -76,12 +76,132 @@ public class MainActivity extends AppCompatActivity {
         * ------------------------------------------------------------
         * */
 
+
+
+
         primeroIBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Navegar al primer registro
+
+                int posicion = 0;
+                cursor.moveToPosition(posicion);
+                mostrarRegistro(cursor);
 
             }
         });
+
+        anteriorIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int actual = cursor.getPosition();
+                if(actual > 0){
+                    actual--;
+                    cursor.moveToPosition(actual);
+                    mostrarRegistro(cursor);
+                }
+
+
+
+            }
+        });
+
+        siguienteIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean siguiente = cursor.moveToNext();
+                if(siguiente){
+                    mostrarRegistro(cursor);
+                }
+            }
+        });
+
+        ultimoIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cursor.moveToLast();
+                mostrarRegistro(cursor);
+            }
+        });
+
+        agregarIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+
+
+            });
+        modificarIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if(cantidad ==1){
+                    Toast.makeText(MainActivity.this, "Regristro Modificado", Toast.LENGTH_SHORT).show();
+
+                    int i= cursor.getPosition();
+                    cargarDatos();
+                    //Regresar la posicion del cursosr a registro modificado
+                    cursor.moveToPosition(i);
+                    mostrarRegistro(cursor);
+                }else{
+                    Toast.makeText
+                            (MainActivity.this, "ERROR. Registro no modificado", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+                                         });
+
+
+        buscarIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               //Buscar registro por su valor de ID
+               admin = new AdminSQLiteOpenHelper(getApplicationContext(),
+                       "administracion", null, 1);
+               bd = admin.getReadableDatabase();
+               //obtener valor id de la GUI
+
+                String id= txtId.getText().toString();
+                //Realizar busqueda
+
+                Cursor fila = bd.rawQuery("select gramineas where id = " + id, null);
+
+                //Verfiicar resultado
+                if (fila.moveToFirst()){
+                    //Registro encontrado
+                    //Mostar datos
+                    txtNombre.setText(fila.getString(1));
+                    txtDesc.setText(fila.getString(2));
+
+                    //Cerrar base de datos
+                    bd.close();
+
+                    //Mostar mensaje
+                    Toast.makeText(MainActivity.this, "Registro encontrado", Toast.LENGTH_SHORT).show();
+
+                    //ACTUALIZAT CURSOS
+                    Cursor filasantes = bd.rawQuery("select cout(*) from gramineas"+
+                            "Where id < "+id, null);
+                    filasantes.moveToFirst();
+                    int antes = Integer.parseInt(filasantes.getString(0));
+
+                    cursor.moveToPosition(antes);
+
+                }else{
+                    //Registro no encontrado
+                    //Mostrar mensaje
+                    Toast.makeText(MainActivity.this, "Registro NO encontrado", Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+        });
+
+
 
 
 

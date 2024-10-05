@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#45070101"
+    android:fillViewport="true">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -13,106 +17,1028 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="#A09AA0"
             android:gravity="center">
+
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="@font/agbalumo"
                 android:gravity="center"
-                android:text="TextView" />
+                android:text="@string/titulo"
+                android:textSize="34sp" />
+
+
         </TableRow>
 
         <TableRow
             android:layout_width="141dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <LinearLayout
                 android:layout_width="336dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#5BFFFFFF"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/IMhierro"
                     android:layout_width="83dp"
                     android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView1"
                     app:srcCompat="@drawable/hierro" />
 
-                <TextView
-                    android:id="@+id/TVDescHierro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVDescHierro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVDescHierro" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <NumberPicker
                 android:id="@+id/NP1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:value="0" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <LinearLayout
                 android:layout_width="336dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/IMacero"
                     android:layout_width="83dp"
                     android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView2"
                     app:srcCompat="@drawable/acero" />
 
-                <TextView
-                    android:id="@+id/TVDescAcero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVDescAcero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVDescAcero" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <NumberPicker
                 android:id="@+id/NP2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:value="0" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <LinearLayout
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Titulos3"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/IMestano"
                     android:layout_width="83dp"
                     android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView3"
                     app:srcCompat="@drawable/estano" />
 
-                <TextView
-                    android:id="@+id/TVDescEstano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVDescEstano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVDescEstano" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <NumberPicker
                 android:id="@+id/NP3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:value="0" />
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/IMpeltre"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView4"
+                    app:srcCompat="@drawable/peltre" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos4"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVPeltre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVPeltre" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/IMzinc"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView5"
+                    app:srcCompat="@drawable/zinc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVZinc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="94dp"
+                        android:text="@string/TVZinc" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/IMlaton"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView6"
+                    app:srcCompat="@drawable/laon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos6"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVLaton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVLaton" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/IMcobre"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView7"
+                    app:srcCompat="@drawable/cobre" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TVCobre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TVDescCobre" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMbronce"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView8"
+                    app:srcCompat="@drawable/bronce" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos8"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVBronce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVDescBronce" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMcromo"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView9"
+                    app:srcCompat="@drawable/cromo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:id="@+id/titulo9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos9"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVCromo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVCromo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMnicrosil"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/TVNicrosil"
+                    app:srcCompat="@drawable/nicrosil" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos10"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVNicrosil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVNicrosil" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMaluminio"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView11"
+                    app:srcCompat="@drawable/aluminio" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos11"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVAluminio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVAluminio" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMduralumin"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView12"
+                    app:srcCompat="@drawable/darum" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos12"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVDuralumin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVDuralumin" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMcadmio"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/Titulos13"
+                    app:srcCompat="@drawable/cadmio" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos13"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVCadmio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVCadmio" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMbandaleo"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView14"
+                    app:srcCompat="@drawable/bendaleo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos14"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVBandaleo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVBandaleo" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMoro"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView15"
+                    app:srcCompat="@drawable/oro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos15"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVOro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVOro" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMelectrum"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView16"
+                    app:srcCompat="@drawable/electrum" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos16"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVElectrum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVElectrum" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMatium"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView17"
+                    app:srcCompat="@drawable/atium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos17"
+                        android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/TVAtium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVAtium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMettmetal"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView18"
+                    app:srcCompat="@drawable/ettmetal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos18"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVEttmetal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVEttmetal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/IMlerasium"
+                    android:layout_width="83dp"
+                    android:layout_height="115dp"
+                    android:contentDescription="@string/imagenView19"
+                    app:srcCompat="@drawable/lerasium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/titulo19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/agbalumo"
+                        android:text="@string/Titulos19"
+                        android:textSize="16sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/TVLerasium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TVLerasium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/NP19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="0" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/BTNPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#45070101"
+                android:fontFamily="@font/agbalumo"
+                android:text="@string/RealizarPedido"
+                android:textSize="16sp" />
+        </TableRow>
+
+
     </TableLayout>
 </ScrollView>

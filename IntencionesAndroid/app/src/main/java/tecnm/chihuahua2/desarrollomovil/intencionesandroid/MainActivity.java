@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         btnGoogleMaps = findViewById(R.id.GoogleMbtn);
         btnGoogleMapsCalle = findViewById(R.id.GoogleMCbtn);
         btnTomarFoto = findViewById(R.id.Fotobtn);
+        btnMandarMensaje = findViewById(R.id.Mensajebtn);
+
 
 
 
@@ -62,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intentLL = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:6145994178"));
+                Intent intentLL = new Intent(Intent.ACTION_DIAL,
+                        Uri.parse("tel:6145994178"));
                 startActivity(intentLL);
 
             }
@@ -71,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
         btnGoogleMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentGM = new Intent(Intent.ACTION_VIEW,Uri.parse("geo:0,0?q=Chihuahua"));
+                Intent intentGM = new Intent
+                        (Intent.ACTION_VIEW,Uri.parse("geo:0,0?q=Chihuahua"));
                 startActivity(intentGM);
             }
         });
@@ -79,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
         btnGoogleMapsCalle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentGMc = new Intent(Intent.ACTION_VIEW,Uri.parse("google.streetview:cbll=28.7245144,-106.1081964"));
+                Intent intentGMc = new Intent(Intent.
+                        ACTION_VIEW,Uri.parse("google.streetview:cbll=28.7245144,-106.1081964"));
                 startActivity(intentGMc);
             }
         });
@@ -98,15 +103,21 @@ public class MainActivity extends AppCompatActivity {
         btnMandarMensaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentMM = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
-                intentMM.putExtra(Intent.EXTRA_SUBJECT, "Mandar mensaje desde nuestra app");
-                intentMM.putExtra(Intent.EXTRA_TEXT, "Este es un mensaje enviado desde mi telefono");
+                Intent intentMM = new Intent(Intent.ACTION_SEND);
+                intentMM.setType("message/rfc822");  // Especificar que es para enviar correos
+
+                intentMM.putExtra(Intent.EXTRA_SUBJECT,
+                        "Mandar mensaje desde nuestra app");
+                intentMM.putExtra(Intent.EXTRA_TEXT,
+                        "Este es un mensaje enviado desde mi telefono");
 
                 // Agregar destinatarios
                 intentMM.putExtra(Intent.EXTRA_EMAIL, new String[]{"aome2005.kirara7@gmail.com", "myrandy22@hotmail.com"});
 
-                if (intentMM.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intentMM);
+                try {
+                    startActivity(Intent.createChooser(intentMM, "Elige una aplicación de correo"));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    // Manejar la excepción si no hay ninguna app de correo
                 }
             }
         });

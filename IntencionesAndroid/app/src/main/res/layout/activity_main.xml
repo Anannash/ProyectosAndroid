@@ -5,54 +5,80 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondovidrio"
+    android:gravity="center"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="369dp"
         android:layout_height="wrap_content"
-        android:text="@string/STitulo" />
+        android:background="#E1F4F4F4"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/STitulo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/PaginaWebtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnAbrirPaginaWeb" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnAbrirPaginaWeb"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/Telbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnLlamada" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnLlamada"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/GoogleMbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnGoogleMaps" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnGoogleMaps"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/GoogleMCbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnGoogleMapsCalle" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnGoogleMapsCalle"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/Mensajebtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnMandarMensaje" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnMandarMensaje"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/Fotobtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/SbtnTomarFoto" />
+        android:backgroundTint="#3D0707"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/SbtnTomarFoto"
+        android:textSize="16sp" />
 
 </LinearLayout>

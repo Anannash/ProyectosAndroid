@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Examen PracticoDesarrollo</string>
+
+
+    <string name="titulo">Convertidor de pulgadas a cm y m</string>
+    <string name="EDpulgas">Valor en pulgadas</string>
+    <string name="BTNconversion">Convertir</string>
+    <string name="EDcm">Cantidad de conversiones realizadas:</string>
+    <string name="EDm">0</string>
+    <string name="resultado">pulgadas a cm y m</string>
+
+</resources>

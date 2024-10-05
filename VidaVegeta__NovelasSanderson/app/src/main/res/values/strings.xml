@@ -1,3 +1,96 @@
 <resources>
     <string name="app_name">VidaVegeta__NovelasSanderson</string>
+
+
+    <string name="titulo">Tienda de Metales</string>
+    <string name="Titulos1">Hierro (Atreador) 50$</string>
+    <string name="Titulos2">Acero (Lanzamonedas) 20$</string>
+    <string name="Titulos3">Estaño (Ojo de estaño) 100$</string>
+    <string name="Titulos4">Peltre (Violento) 150$</string>
+    <string name="Titulos5">Zinc (Encendedor) 200$</string>
+    <string name="Titulos6">Latón (Aplacador) 250$</string>
+    <string name="Titulos7">Cobre (Ahumador) 100$</string>
+    <string name="Titulos8">Bronce  (Buscador) 150$</string>
+    <string name="Titulos9">Cromo (Sanguijuela) 100$</string>
+    <string name="Titulos10">Nicrosil (Nicroestallante) 350$ </string>
+    <string name="Titulos11">Aluminio (Mosquitos de aluminio) 500$</string>
+    <string name="Titulos12">Duralumin (Mosquitos de duralumin) 560$</string>
+    <string name="Titulos13">Cadmio (Pulsador) 420$</string>
+    <string name="Titulos14">Bandaleo (Deslizador) 350$</string>
+    <string name="Titulos15">Oro (Augur) 1000$</string>
+    <string name="Titulos16">Electrum (Orquén) 1500$</string>
+    <string name="Titulos17">Atium (Vidente) 5000$</string>
+    <string name="Titulos18">Ettmetal (Reproductor) 10000$ </string>
+    <string name="Titulos19">Lerasium (Nacido de la Bruma) 10000$ </string>
+
+
+    <string name="TVDescHierro">Los brumosos atraedores que queman hierro pueden tirar de fuentes cercanas de metal. Los tirones deben ser dirigidos hacia el centro de gravedad del atraedor.</string>
+    <string name="TVDescAcero">Los brumosos lanzamonedas que queman acero pueden empujar fuentes cercanas de metal. Los empujones deben ser impelidos directamente desde el centro de gravedad del lanzamonedas.</string>
+    <string name="TVDescEstano">Los brumosos ojos de estaño que queman estaño aumentan la sensibilidad de sus cinco sentidos. Todos se incrementan al mismo tiempo.</string>
+    <string name="TVPeltre">Los brumosos brazos de peltre, o violentos, queman peltre para aumentar su fuerza, velocidad y resistencia física, aumentando también la capacidad de su cuerpo para sanar.</string>
+    <string name="TVZinc">Los brumosos encendedores queman zinc para inflamar (encender) las emociones de los individuos cercanos. Puede dirigirse a un solo individuo o a una zona general, y el encendedor puede concentrarse en emociones concretas.</string>
+    <string name="TVLaton">Los brumosos aplacadores queman latón para aplacar las emociones de los individuos cercanos. Puede hacerse con un individuo concreto o con un área general, y el aplacador puede concentrarse en emociones concretas.</string>
+    <string name="TVDescCobre">Los ahumadores queman cobre para crear una nube invisible a su alrededor, que oculta a los alománticos cercanos para que no sean detectados por un buscador y que protege a los individuos cercanos de los efectos de la alomancia emocional.</string>
+    <string name="TVDescBronce">Los brumosos buscadores queman bronce para «oír» los pulsos emitidos por otros alománticos que queman metales. Diferentes metales producen pulsos diferentes.</string>
+    <string name="TVCromo">Los brumosos sanguijuelas que queman cromo mientras tocan a otro alomántico anulan las reservas de metal de ese alomántico.</string>
+    <string name="TVNicrosil">Los brumosos nicroestallantes que queman nicrosil mientras tocan a otro alomántico quemarán instantáneamente cualquier metal que queme ese alomántico, liberando un enorme (y a veces inesperado) estallido del poder de esos metales.</string>
+    <string name="TVAluminio">Un nacido de la bruma que quema aluminio metaboliza instantáneamente todos sus metales sin producir ningún otro efecto, anulando todas sus reservas alománticas. Los brumosos que pueden quemar aluminio se llaman «mosquitos de aluminio» por la poca efectividad de esta habilidad.</string>
+    <string name="TVDuralumin">Un nacido de la bruma que quema duralumín abrasa instantáneamente todos los otros metales que arden al mismo tiempo, liberando un enorme estallido de poder de esos metales. Los brumosos que pueden quemar duralumín se llaman «mosquitos de duralumín» debido a la poca efectividad de esta habilidad en sí misma.</string>
+    <string name="TVCadmio">Los brumosos pulsadores queman cadmio para estirar el tiempo en una burbuja a su alrededor, haciendo que pase más despacio dentro de la burbuja. Esto causa que lo que sucede fuera de la burbuja se mueva a velocidad cegadora desde el punto de vista del pulsador.</string>
+    <string name="TVBandaleo">Los brumosos deslizadores queman bendaleo para comprimir el tiempo en una burbuja, haciendo que pase más rápidamente dentro de la burbuja. Esto hace que los hechos fuera de la burbuja se muevan a ritmo glacial desde el punto de vista del deslizador.</string>
+    <string name="TVOro">Los brumosos augures queman oro para tener una visión del yo pasado o de cómo habrían resultado las cosas de haber tomado opciones distintas en el pasado.</string>
+    <string name="TVElectrum">Los brumosos oráculos queman electrum para tener una visión de los posibles rumbos que puede tomar el futuro. Habitualmente está limitada a unos pocos segundos.</string>
+    <string name="TVAtium">Un alomántico que quema Atium es capaz de ver el futuro en unos segundos.</string>
+    <string name="TVEttmetal">Ettmetal puede reproducir un poder particular de alomancia cuando está cerca de ese poder. Cuando se produce un efecto alomántico, consume lentamente el ettmetal, similar a la forma en que un alomántico quema los metales. Es extremadamente volátil al contacto con el agua.</string>
+    <string name="TVLerasium">Una persona normal que quema lerasium se convierte automaticamente en un Nacido de la Bruma que puede quemar de manera simultanea cualquiera de los otros metales.</string>
+
+
+    <string name="imagenView1">Hierro</string>
+    <string name="imagenView2">Acero</string>
+    <string name="imagenView3">Estaño</string>
+    <string name="imagenView4">Peltre</string>
+    <string name="imagenView5">Zinc</string>
+    <string name="imagenView6">Latón</string>
+    <string name="imagenView7">Cobre</string>
+    <string name="imagenView8">Bronce</string>
+    <string name="imagenView9">Cromo</string>
+    <string name="imagenView10">Nicrosil</string>
+    <string name="imagenView11">Aluminio</string>
+    <string name="imagenView12">Duralumin</string>
+    <string name="imagenView13">Cadmio</string>
+    <string name="imagenView14">Bandaleo</string>
+    <string name="imagenView15">Oro</string>
+    <string name="imagenView16">Electrum</string>
+    <string name="imagenView17">Atium</string>
+    <string name="imagenView18">Ettmetal</string>
+    <string name="imagenView19">Lerasium</string>
+
+
+    /*Precios*/
+
+    <string name="PrecioHierrio">50</string>
+    <string name="PrecioAcero">20</string>
+    <string name="PrecioEstaño">100</string>
+    <string name="PrecioPeltre">150</string>
+    <string name="PrecioZinc">200</string>
+    <string name="PrecioLaton">250</string>
+    <string name="PrecioCobre">100</string>
+    <string name="PrecioBronce">150</string>
+    <string name="PrecioCromo">100</string>
+    <string name="PrecioNicrosil">350</string>
+    <string name="PrecioAluminio">500</string>
+    <string name="PrecioDuralumin">560</string>
+    <string name="PrecioCadmio">420</string>
+    <string name="PrecioBandaleo">350</string>
+    <string name="PrecioOro">1000</string>
+    <string name="PrecioElectrum">1500</string>
+    <string name="PrecioAtium">5000</string>
+    <string name="PrecioEttmetal">10000</string>
+    <string name="PrecioLerasium">10000</string>
+
+
+    <string name="RealizarPedido">Confirmar Pedido</string>
+    <string name="button_confirmar_pedido">Confirmar Pedido</string>
+    <string name="EDITTEXTPEDIDO">Pedido:</string>
+
 </resources>

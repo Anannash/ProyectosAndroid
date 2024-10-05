@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9A503764"
+        android:fontFamily="@font/akaya_kanadaka"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textColor="#FCF5FE"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/txtValor"
+            android:layout_width="257dp"
+            android:layout_height="match_parent"
+            android:background="#99473665"
+            android:ems="10"
+            android:hint="@string/EDpulgas"
+            android:inputType="numberDecimal"
+            android:textColor="#FCF5FE"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/Convertirbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#66324B"
+            android:fontFamily="@font/agbalumo"
+            android:text="@string/BTNconversion" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Resultadotxt"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:background="#99473665"
+        android:ems="10"
+        android:hint="@string/resultado"
+        android:inputType="textMultiLine"
+        android:textColor="#FCF5FE"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#99473665"
+            android:text="@string/EDcm"
+            android:textColor="#FCF5FE"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cantidadestxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#99473665"
+            android:text="@string/EDm"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
