@@ -128,6 +128,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                admin = new AdminSQLiteOpenHelper(
+                        getApplicationContext(),"administracion",null
+                        ,1
+                );
+
+                SQLiteDatabase db = admin.getWritableDatabase();
+
+                String id = txtId.getText().toString();
+                String nombre = txtNombre.getText().toString();
+                String descripcion = txtDesc.getText().toString();
+
+                ContentValues registro = new ContentValues();
+                registro.put("id", id);
+                registro.put("nombre", nombre);
+                registro.put("descripcion", descripcion);
+
+                db.insert("gramineas", null, registro);
+
+                db.close();
+
+                Toast.makeText(MainActivity.this,"Registro agregado",
+                        Toast.LENGTH_SHORT).show();
+
+                cargarDatos();
+                mostrarRegistro(cursor);
 
             }
 
@@ -137,9 +162,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                admin = new AdminSQLiteOpenHelper(
+                        getApplicationContext(),
+                        "administracion", null,1
+
+                );
+
+                bd = admin.getWritableDatabase();
+
+                String id = txtId.getText().toString();
+                String nombre = txtNombre.getText().toString();
+                String descripcion = txtDesc.getText().toString();
+
+                ContentValues registro = new ContentValues();
+                registro.put("id", id);
+                registro.put("nombre", nombre);
+                registro.put("descripcion", descripcion);
+
+                int cantidad = bd.update("gramineas", registro,
+                        "id="+id, null);
+
+                bd.close();
 
                 if(cantidad ==1){
-                    Toast.makeText(MainActivity.this, "Regristro Modificado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText
+                            (MainActivity.this,
+                                    "Regristro Modificado", Toast.LENGTH_SHORT).show();
 
                     int i= cursor.getPosition();
                     cargarDatos();
@@ -156,6 +204,38 @@ public class MainActivity extends AppCompatActivity {
                                          });
 
 
+        eliminarIBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                admin = new AdminSQLiteOpenHelper(getApplicationContext(),
+                        "administracion", null, 1);
+
+                bd=admin.getWritableDatabase();
+
+                String id = txtId.getText().toString();
+
+                int cant =bd.delete("gramineas",
+                        "id="+id, null );
+                bd.close();
+
+                if (cant ==1){
+                    Toast.makeText(MainActivity.this,
+                            "Registro eliminado", Toast.LENGTH_SHORT).show();
+
+                    cargarDatos();
+                    mostrarRegistro(cursor);
+                }else{
+                    Toast.makeText(MainActivity.this,
+                            "ERROR,Registro eliminado",
+                            Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+        });
+
+
         buscarIBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -168,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
                 String id= txtId.getText().toString();
                 //Realizar busqueda
 
-                Cursor fila = bd.rawQuery("select gramineas where id = " + id, null);
+                Cursor fila = bd.rawQuery("select count(*) from gramineas where id < " + id, null);
 
                 //Verfiicar resultado
                 if (fila.moveToFirst()){
@@ -177,8 +257,7 @@ public class MainActivity extends AppCompatActivity {
                     txtNombre.setText(fila.getString(1));
                     txtDesc.setText(fila.getString(2));
 
-                    //Cerrar base de datos
-                    bd.close();
+
 
                     //Mostar mensaje
                     Toast.makeText(MainActivity.this, "Registro encontrado", Toast.LENGTH_SHORT).show();
@@ -197,6 +276,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Registro NO encontrado", Toast.LENGTH_SHORT).show();
 
                 }
+                //Cerrar base de datos
+                bd.close();
 
             }
         });
@@ -214,6 +295,7 @@ public class MainActivity extends AppCompatActivity {
             mostrarRegistro(cursor);
 
         }
+        /*
 
         agregarIBtn.setOnClickListener(view -> {
 
@@ -245,7 +327,7 @@ public class MainActivity extends AppCompatActivity {
             mostrarRegistro(cursor);
 
 
-        });
+        });*/
 
 
 
