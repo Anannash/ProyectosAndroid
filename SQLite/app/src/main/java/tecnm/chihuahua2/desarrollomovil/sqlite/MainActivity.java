@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txtId;
     EditText txtNombre;
     EditText txtDesc;
+    TextView ContadorTV;
 
 
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
         bd = admin.getWritableDatabase();
         cursor = admin.consultaGra();
+        ContadorTV = findViewById(R.id.ContadorTV);
 
         /*Escuchadores y codigo para botones de navegacion
         * ------------------------------------------------------------
@@ -100,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
                     cursor.moveToPosition(actual);
                     mostrarRegistro(cursor);
                 }
-
-
-
             }
         });
 
@@ -196,7 +195,9 @@ public class MainActivity extends AppCompatActivity {
                     mostrarRegistro(cursor);
                 }else{
                     Toast.makeText
-                            (MainActivity.this, "ERROR. Registro no modificado", Toast.LENGTH_SHORT).show();
+                            (MainActivity.this,
+                                    "ERROR. Registro no modificado",
+                                    Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -210,19 +211,14 @@ public class MainActivity extends AppCompatActivity {
 
                 admin = new AdminSQLiteOpenHelper(getApplicationContext(),
                         "administracion", null, 1);
-
                 bd=admin.getWritableDatabase();
-
                 String id = txtId.getText().toString();
-
                 int cant =bd.delete("gramineas",
                         "id="+id, null );
                 bd.close();
-
                 if (cant ==1){
                     Toast.makeText(MainActivity.this,
                             "Registro eliminado", Toast.LENGTH_SHORT).show();
-
                     cargarDatos();
                     mostrarRegistro(cursor);
                 }else{
@@ -248,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
                 String id= txtId.getText().toString();
                 //Realizar busqueda
 
-                Cursor fila = bd.rawQuery("select count(*) from gramineas where id < " + id, null);
+                Cursor fila = bd.rawQuery("select id, nombre, descripcion from gramineas where id = " + id, null);
 
                 //Verfiicar resultado
                 if (fila.moveToFirst()){
@@ -263,8 +259,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Registro encontrado", Toast.LENGTH_SHORT).show();
 
                     //ACTUALIZAT CURSOS
-                    Cursor filasantes = bd.rawQuery("select cout(*) from gramineas"+
-                            "Where id < "+id, null);
+                    Cursor filasantes = bd.rawQuery("select count(*) from gramineas where id < " + id, null);
+
                     filasantes.moveToFirst();
                     int antes = Integer.parseInt(filasantes.getString(0));
 
@@ -342,16 +338,13 @@ public class MainActivity extends AppCompatActivity {
 
         bd = admin.getWritableDatabase();
         cursor = admin.consultaGra();
-
-
 //validar si hay registro
         if(cursor != null && cursor.moveToFirst()){
             cursor.moveToFirst();
+            // Mostrar el total de registros
+            ContadorTV.setText("Registro No. " + (cursor.getPosition() + 1) + " de " + cursor.getCount());
         }
-
-    bd.close();
-
-    }
+    bd.close();}
 
     public void mostrarRegistro(Cursor cursor){
         if (!String.valueOf(cursor.getCount()).equals("0")) {

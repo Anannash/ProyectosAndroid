@@ -17,4 +17,6 @@
     <string name="IBTNmodificar">Modificar</string>
     <string name="IBTNbuscar">Buscar</string>
 
+    <string name="contador">Contador:</string>
+
 </resources>

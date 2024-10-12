@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Almacen Preferencias</string>
+
+    <string name="TVtitulo">Alamcenar Preferencias</string>
+    <string name="TVnombre">Nombre</string>
+    <string name="TVtema">Tema</string>
+    <string name="TVfecha">Fecha</string>
+
+    <string name="BTguardar">Guardar</string>
+    <string name="BTver">Ver</string>
+    <string name="BTRegresar">Regresar</string>
+
+    <string name="RBplanta">Planta</string>
+    <string name="RBanimal">Animal</string>
+    <string name="RBfigura">Figura</string>
+
+    <string name="ImaVw">TEMA IMAGEN</string>
+
+</resources>

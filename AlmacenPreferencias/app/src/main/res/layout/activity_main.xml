@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVnombre" />
+
+        <EditText
+            android:id="@+id/Nombretxt"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="@string/TVnombre"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVtema" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Plantarb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RBplanta" />
+
+            <RadioButton
+                android:id="@+id/Animalrb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RBanimal" />
+
+            <RadioButton
+                android:id="@+id/Figurarb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RBfigura" />
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVfecha" />
+
+        <CalendarView
+            android:id="@+id/calendarView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Guardarbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BTguardar" />
+
+        <Button
+            android:id="@+id/Verbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BTver" />
+    </TableRow>
+
+</TableLayout>

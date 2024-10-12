@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GraficasAndroidPlot</string>
+
+    <string name="textView_titulo">Graficas AndroidPlot</string>
+    <string name="textView_descripcion">Generadas con la librería JPlot
+ para Android, tomado de: \n
+ https://github.com/johnspice/jplot-android
+ </string>
+    <string name="button_grafica_puntos">Grafica puntos</string>
+    <string name="button_grafica_pastel">Grafica pastel</string>
+    <string name="button_grafica_barras">Grafica barras</string>
+    <string name="button_grafica_personalizada">Grafica personalizada</string>
+
+    <!-- Grafica puntos -->
+    <string name="textView_titulo_puntos">Gráfica puntos</string>
+    <string name="button_regresar_puntos">Regresar</string>
+
+    <!-- Grafica barras -->
+    <string name="textView_titulo_barras">Gráfica barras</string>
+    <string name="button_regresar_barras">Regresar</string>
+
+
+
+    <!-- Grafica pastel -->
+    <string name="textView_titulo_pastel">Gráfica pastel</string>
+    <string name="button_regresar_pastel">Regresar</string>
+
+    <!-- Grafica personalizada -->
+    <string name="textView_titulo_personalizada">Barras personalizada</string>
+    <string name="textView_etiquetas_x">Etiquetas del Eje X (espacio)</string>
+    <string name="textView_valores_y">Números del Eje Y</string>
+    <string name="button_crear_grafica">Crear gráfica</string>"
+    <string name="button_regresar_personalizada">Regresar</string>
+</resources>
