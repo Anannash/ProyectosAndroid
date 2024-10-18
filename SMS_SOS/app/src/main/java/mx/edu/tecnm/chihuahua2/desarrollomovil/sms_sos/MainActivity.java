@@ -5,6 +5,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -55,7 +56,33 @@ public class MainActivity extends AppCompatActivity {
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
                 1000l,1.0F,gpsReceiver);
 
-         
+         SMS_SOSbtn.setOnClickListener(view -> {
+
+             try {
+
+                 SmsManager smsManager = SmsManager.getDefault();
+                 String phonenumber = "6145994178";
+                 //Configurar mensaje
+                 String message = "Mensaje de auxilio," +
+                         " Me encuentro en la latitud: " + latitud +
+                         " y longitud: " + longitud;
+
+                 //Enviar mensaje
+
+                 smsManager.sendTextMessage(phonenumber, null, message,
+                         null, null);
+
+                 Toast.makeText(MainActivity.this,
+                         getString(R.string.Enviado), Toast.LENGTH_SHORT).show();
+             }catch (Exception e){
+
+                 Toast.makeText(MainActivity.this,
+                         getString(R.string.FalloEnvio), Toast.LENGTH_SHORT).show();
+             }
+
+         });
+
+
 
 
 

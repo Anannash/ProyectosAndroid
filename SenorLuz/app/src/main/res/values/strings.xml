@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SensorLuz</string>
+
+    <string name="TVTitulo">Sensor de Luz en TEXTVIEW</string>
+    <string name="TVDesc">Se usa el sensor de luz en txtV y su valor
+    para asignar un color de texto y fondo a un txtxV</string>
+    <string name="TVResultado">Resultado</string>
+
+</resources>
