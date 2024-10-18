@@ -13,7 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button GPuntosbtn, GPastelbtn, GBarrasbtn, GPerzonalizadabtn;
+    Button GPuntosbtn, GPastelbtn, GBarrasbtn,
+            GPerzonalizadabtn, GPuntosPbtn, GPastelPbtn;
 
 
 
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         GPastelbtn = findViewById(R.id.btnPastel);
         GPerzonalizadabtn = findViewById(R.id.btnPerzonalizada);
         GPuntosbtn = findViewById(R.id.btnPuntos);
+        GPuntosPbtn = findViewById(R.id.btnPuntosP);
+        GPastelPbtn = findViewById(R.id.btnPatelP);
 
         GBarrasbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        GPuntosPbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent IPuntosP = new Intent(MainActivity.this,
+                        PuntosPerzonalizado.class);
+                startActivity(IPuntosP);
+            }});
+
         GPastelbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,9 +82,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
+        GPastelPbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent IPastelP = new Intent(MainActivity.this,
+                        pastelPersonalizado.class);
+                startActivity(IPastelP);
+            }
+        });
 
 
     }

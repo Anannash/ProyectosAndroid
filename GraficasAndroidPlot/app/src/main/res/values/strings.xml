@@ -20,7 +20,6 @@
     <string name="button_regresar_barras">Regresar</string>
 
 
-
     <!-- Grafica pastel -->
     <string name="textView_titulo_pastel">Gráfica pastel</string>
     <string name="button_regresar_pastel">Regresar</string>
@@ -29,6 +28,23 @@
     <string name="textView_titulo_personalizada">Barras personalizada</string>
     <string name="textView_etiquetas_x">Etiquetas del Eje X (espacio)</string>
     <string name="textView_valores_y">Números del Eje Y</string>
+    <string name="textView_valores_x">Números del Eje X</string>
     <string name="button_crear_grafica">Crear gráfica</string>"
     <string name="button_regresar_personalizada">Regresar</string>
+    <string name="button_Aceptar">Gráficar</string>
+
+
+    <!-- Puntos Perznaluizada -->
+    <string name="tvTituloPuntosP">Grafica de puntos Perzonalizada</string>
+    <string name="tvX">Numeros del Eje X</string>
+    <string name="tvY">Numeros del Eje Y</string>
+    <string name="btnCrearPuntosP">Crear Grafica</string>
+    <string name="txtYX">1,8,9,7.4 ....</string>
+    <string name="txtDescripcion">Coloque el titulo de su preferencia</string>
+    <string name="txtTituloGrafica">Titulo de la Grafica</string>
+
+    <!---->
+    <string name="textView_titulo_pastelPersonalizado">Grafica Pastel Perzonalizado</string>
+
+
 </resources>

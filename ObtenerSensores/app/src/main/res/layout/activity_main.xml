@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/LVsensores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A4FFC1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#429153"
+        android:dividerHeight="15dp"
+        android:drawSelectorOnTop="true" />
+
+</LinearLayout>

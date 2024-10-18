@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondito3"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".GraficaPuntos">
@@ -14,9 +15,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
         android:text="@string/textView_titulo_personalizada"
         android:textAlignment="center"
-        android:textSize="34sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,12 +27,12 @@
         android:text="@string/textView_etiquetas_x" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/ValorXtxt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="61dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+        android:hint="@string/textView_valores_x"
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/textView4"
@@ -39,23 +41,23 @@
         android:text="@string/textView_valores_y" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/ValorYtxt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="79dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="@string/textView_valores_y" />
+        android:hint="@string/textView_valores_y"
+        android:inputType="text" />
 
     <LinearLayout
-        android:id="@+id/main2"
+        android:id="@+id/main3"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="309dp"
         android:orientation="vertical"></LinearLayout>
 
     <Button
-        android:id="@+id/btnRegresar"
+        android:id="@+id/Aceptarbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/button_regresar_personalizada" />
+        android:text="@string/button_crear_grafica" />
+
 </LinearLayout>

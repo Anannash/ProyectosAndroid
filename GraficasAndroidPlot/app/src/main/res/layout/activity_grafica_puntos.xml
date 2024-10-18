@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".GraficaPuntos">
@@ -14,12 +15,13 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
         android:text="@string/textView_titulo_puntos"
         android:textAlignment="center"
         android:textSize="34sp" />
 
     <LinearLayout
-        android:id="@+id/main2"
+        android:id="@+id/main3"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:orientation="vertical"></LinearLayout>

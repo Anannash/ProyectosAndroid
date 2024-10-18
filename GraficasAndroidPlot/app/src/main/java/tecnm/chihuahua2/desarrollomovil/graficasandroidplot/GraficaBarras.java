@@ -33,7 +33,7 @@ public class GraficaBarras extends AppCompatActivity {
         });
         context = this;
 
-        pantalla= (LinearLayout) (findViewById(R.id.main2));
+        pantalla= (LinearLayout) (findViewById(R.id.main3));
 
         String x[]={"lunes","martes","miercoles","jueves","viernes"};
         double y[]={20,30,44,0,-25};

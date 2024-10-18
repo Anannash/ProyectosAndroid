@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SMS SOS</string>
+
+    <string name="buttonSOS">S.O.S</string>
+
+
+    <string name="ErrorPermisos">Error de Permisos</string>
+    <string name="CuerpoSMS">Me encuentro en la latitud y longitud</string>
+    <string name="FalloEnvio">Falla de envio de mendaje</string>
+    <string name="Enviado">S.O.S enviado</string>
+    <string name="NoPreparadoEnviuar">No preparado para enviar</string>
+    <string name="PreparadoEnviuar">Preparado para enviar</string>
+    <string name="GPSHabilitado">GPS habilitado</string>
+    <string name="GPSFavor">!Favor de hanbilitar GPS!!!</string>
+</resources>

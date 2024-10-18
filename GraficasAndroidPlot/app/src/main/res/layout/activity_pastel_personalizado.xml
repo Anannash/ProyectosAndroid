@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fondo7"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/trade_winds"
+        android:text="@string/textView_titulo_pastelPersonalizado"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextEtiquetas"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="#C8FBB178"
+        android:hint="@string/txtYX"
+        android:inputType="text"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextValores"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_margin="15dp"
+        android:background="#C8FBB178"
+        android:hint="@string/txtYX"
+        android:inputType="text"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtffdgfsdfgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#C8FBB178"
+        android:text="@string/txtTituloGrafica"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etxtTituloGraficaPastel"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_margin="15dp"
+        android:background="#C8FBB178"
+        android:ems="10"
+        android:hint="@string/txtDescripcion"
+        android:inputType="text" />
+
+
+    <LinearLayout
+        android:id="@+id/maindiez"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/button_obtenerGrafica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Obtener Gráfica" />
+
+</LinearLayout>

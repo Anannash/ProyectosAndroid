@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo6"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".PuntosPerzonalizado">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="@string/tvTituloPuntosP"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:text="@string/tvX"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtX"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:ems="10"
+        android:hint="@string/txtYX"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:text="@string/tvY"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtY"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:ems="10"
+        android:hint="@string/txtYX"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtffdgfdfgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:text="@string/txtTituloGrafica"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etxtTituloGraficaPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="#A9FDEBE2"
+        android:ems="10"
+        android:hint="@string/txtDescripcion"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/mainPuntosP"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/Crearbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnCrearPuntosP" />
+</LinearLayout>

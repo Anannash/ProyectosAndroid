@@ -5,16 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    android:background="@drawable/fondito2"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#C5A6E5"
+        android:fontFamily="@font/butcherman"
         android:gravity="center_horizontal"
         android:text="@string/textView_titulo"
+        android:textColor="#472C66"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,9 +29,11 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_margin="10dp"
-        android:text="@string/textView_descripcion" />
+        android:background="#C5A6E5"
+        android:text="@string/textView_descripcion"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/btnBarras"
@@ -55,5 +62,19 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/button_grafica_personalizada" />
+
+    <Button
+        android:id="@+id/btnPuntosP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/tvTituloPuntosP" />
+
+    <Button
+        android:id="@+id/btnPatelP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/textView_titulo_pastelPersonalizado" />
 
 </LinearLayout>
