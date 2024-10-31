@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="90dp"
+        android:background="#C87AC4EC"
+        android:fontFamily="@font/cardo_bold"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="369dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="90dp"
+        android:layout_weight="1"
+        android:background="#C87AC4EC"
+        android:fontFamily="@font/cardo_bold"
+        android:text="@string/TVstepcount"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="90dp"
+        android:layout_weight="1"
+        android:background="#C87AC4EC"
+        android:fontFamily="@font/cardo_bold"
+        android:text="@string/TVdistancia"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="1"
+        android:text="@string/BTNreset" />
+
+</LinearLayout>

@@ -12,4 +12,5 @@
     <string name="PreparadoEnviuar">Preparado para enviar</string>
     <string name="GPSHabilitado">GPS habilitado</string>
     <string name="GPSFavor">!Favor de hanbilitar GPS!!!</string>
+    <string name="ContadorSMS">Mensajes enviados: </string>
 </resources>

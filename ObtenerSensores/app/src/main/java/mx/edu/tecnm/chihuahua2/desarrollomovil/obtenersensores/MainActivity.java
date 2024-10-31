@@ -18,11 +18,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Objeto para gestion sensores
+    // Objeto para gestionar sensores
     SensorManager sensorManager;
-    ListView ListaSensores;
-    int Contador = 0;
-    TextView contadortxt;
+    ListView listaSensores;
+    TextView contadorTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,39 +34,25 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        //Vincular
+        // Vinculación de vistas
+        contadorTxt = findViewById(R.id.Contadortxtx);
+        listaSensores = findViewById(R.id.LVsensores);
 
-        contadortxt = findViewById(R.id.contador);
-
-        ListaSensores = findViewById(R.id.LVsensores);
-
-        //obtner referncia
+        // Obtener referencia del servicio de sensores
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
-
-        //Obtener una lista de los sensotres del dispositivoi
-
+        // Obtener una lista de los sensores del dispositivo
         List<Sensor> deviceSensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
 
-        //Creatr un adaptador para asignar sensore
-        //Cinculacion listas V
-
-        final ArrayAdapter<Sensor> adapter = new ArrayAdapter<Sensor>(
-                MainActivity.this, android.R.layout.simple_list_item_1,
-                deviceSensors
+        // Crear un adaptador para asignar los sensores a la lista
+        final ArrayAdapter<Sensor> adapter = new ArrayAdapter<>(
+                MainActivity.this, android.R.layout.simple_list_item_1, deviceSensors
         );
 
-        //Asociar adaptador a LV
-        ListaSensores.setAdapter(adapter);
+        // Asociar el adaptador a la ListView
+        listaSensores.setAdapter(adapter);
 
-
-        contadortxt.setText(deviceSensors.lenght);
-
-
-
-
-
-
-
-    }///ON CREATE BITCH
+        // Mostrar el número total de sensores en el TextView
+        contadorTxt.setText(getString(R.string.Contador)+ " " + deviceSensors.size());
+    }
 }

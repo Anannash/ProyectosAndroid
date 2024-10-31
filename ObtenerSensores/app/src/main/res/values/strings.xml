@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ObtenerSensores</string>
+    <string name="Contador">Número de sensores:</string>
 </resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StepCounter</string>
+
+    <string name="TVstepcount">Pasos: </string>
+    <string name="TVdistancia">Distancia: </string>
+    <string name="TVsensorPasosNoDisponnibles">No dispones de un sensor de pasos</string>
+    <string name="BTNreset">Reiniciar contador</string>
+</resources>

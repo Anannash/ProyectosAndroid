@@ -1,5 +1,6 @@
 package mx.edu.tecnm.chihuahua2.desarrollomovil.sensorluz;
 
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -45,18 +46,47 @@ public class MainActivity extends AppCompatActivity {
         //Instanciamos el sensor de luz
         Luz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
+
+
         //Escuchador para detectar cambios en ell sensor de luz
         sensorEventListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
+                //obteer el valor de ilumibnacion y aplicar TV
+                TVResultado.setText(sensorEvent.values[0]+"");
 
-            }
+                //Asignar colores segun el numero de sensor
+                int gris = (int) sensorEvent.values[0];
+
+                if(gris>255){
+                    gris = 255;
+                }
+                TVResultado.setTextColor(Color.rgb(255-gris,
+                        255-gris,255-gris));
+                TVResultado.setBackgroundColor(Color.rgb(gris,gris,gris));
+
+           }
 
             @Override
             public void onAccuracyChanged(Sensor sensor, int i) {
 
             }
         };
+        //Registrar el sensor de luz
+        sensorManager.registerListener(sensorEventListener, Luz,
+                SensorManager.SENSOR_DELAY_FASTEST);
     }
 
+    //ES NECESARIO APAGAR EL SENCSOR CUANDO LA APP NO ESRA EB USI
+    //PASA A UN SEGUNDO PLANO O ES DESTRUIDA
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        //Apagar el senson
+        sensorManager.unregisterListener(sensorEventListener, Luz
+        );
+    }
 }
