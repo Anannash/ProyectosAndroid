@@ -35,18 +35,14 @@ public class VerDatos extends AppCompatActivity {
         FechaTV = findViewById(R.id.FechaTV);
         TemaIM = findViewById(R.id.TemaIM);
         RegresarBTN = findViewById(R.id.RegresarBTN);
-
-
         //RECUPERAR DATOS DE PREFERENCIAS
         String nombre;
         String tema;
         String fecha;
-
         //Acceder a la preferncia
         SharedPreferences sharedPreferences =
                 getSharedPreferences("preferencias",
                         Context.MODE_PRIVATE);
-
         nombre = sharedPreferences.getString("nombre", "");
         tema = sharedPreferences.getString("tema", "");
         fecha = sharedPreferences.getString("fecha", "");
@@ -61,17 +57,13 @@ public class VerDatos extends AppCompatActivity {
         }else if (tema.equals("Animal")) {
 
             TemaIM.setImageResource(R.drawable.gatito);
-
         }else{
             TemaIM.setImageResource(R.drawable.kinger);
-
         }
-
         //Escuchador para boton
         RegresarBTN.setOnClickListener(v -> {
             finish();
         });
-
 
     }//ONCREATE
 

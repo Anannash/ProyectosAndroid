@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-    <uses-feature android:name="android.hardware.sensor.step_counter" />
-    <uses-feature android:name="android.hardware.sensor.step_detector" />
+    <uses-feature android:name="android.hardware.sensor.step_counter"
+        android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.step_detector"
+        android:required="true"/>
 
 
     <application

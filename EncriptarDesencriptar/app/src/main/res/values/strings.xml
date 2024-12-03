@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EncriptarDesencriptar</string>
+    <string name="editText_encriptar">Escribir texto a encriptar</string>
+    <string name="editText_desencriptar">Escribir texto a desencriptar</string>
+    <string name="button_encriptar">Encriptar</string>
+    <string name="button_desencriptar">Desencriptar</string>
+</resources>

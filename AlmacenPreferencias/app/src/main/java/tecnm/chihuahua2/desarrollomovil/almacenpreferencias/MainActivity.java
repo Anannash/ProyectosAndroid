@@ -50,41 +50,25 @@ public class MainActivity extends AppCompatActivity {
 
         //Cofico par ale boton guardar
         guardarbtn.setOnClickListener(v -> {
-            /*
-            El metodo getShatedPreference() permite definnir un
-            nombre de archivo para guardar preferencias.
-            Este archivo se podra usar en cualquier actividad de la
-            app
-            * */
+            /*El metodo getShatedPreference() permite definnir un nombre de archivo para guardar preferencias.
+            Este archivo se podra usar en cualquier actividad de la app  * */
             SharedPreferences sharedPreferences =
                     getSharedPreferences("preferencias", MODE_PRIVATE);
-
             //Declarar objeto para editar prefesrencias
             SharedPreferences.Editor editor = sharedPreferences.edit();
             //Recupera y guarda el nombre
             editor.putString("nombre", nombretxt.getText().toString());
-
             //Recuperar y guardar el tema
             if (plantarb.isChecked()) {
-                editor.putString("tema", "Planta");
-            } else if (animalrb.isChecked()) {
-                editor.putString("tema", "Animal");
-            } else if (figurarb.isChecked()) {
-                editor.putString("tema", "Figura");
-            }
-
+                editor.putString("tema", "Planta");} else if (animalrb.isChecked()) {
+                editor.putString("tema", "Animal");} else if (figurarb.isChecked()) {
+                editor.putString("tema", "Figura");}
             //Recuperar y guardar la fecha
             editor.putString("fecha", selectDate);
-
             //Guardar cambios
             editor.apply();
-
             //Mostrar mensaje
             Toast.makeText(this, "Preferencias guardadas", Toast.LENGTH_SHORT).show();
-
-
-
-
         });
 
         //Aggregar escuchador de eventos en caldendarViw y guradarl fehc
@@ -97,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
         //Escuchador del boton abriri VerDatodds"
         verbtn.setOnClickListener(v -> {

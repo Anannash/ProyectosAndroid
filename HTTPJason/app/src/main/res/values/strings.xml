@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HTTPJason</string>
+    <string name="titulo">Listado de gramineas</string>
+
+    <string name="txtIDGram">ID: </string>
+    <string name="txtNombreComun">Nombre Comun:</string>
+    <string name="txtNombreCientifico">Nombre Cientifico:</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Brujula</string>
+
+    <string name="Titulo">Brujula con sensores</string>
+    <string name="Grados">Grados: </string>
+    <string name="ImgVbrujula">Imagen de Brujula</string>
+</resources>
